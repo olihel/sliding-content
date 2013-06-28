@@ -1,0 +1,90 @@
+/*!
+ * SlidingContent
+ * https://github.com/olihel/sliding-content.git
+ *
+ * Copyright (c) 2013 Oliver Hellebusch
+ * Released under MIT license (https://raw.github.com/olihel/sliding-content/master/LICENSE)
+ */
+body {
+    margin: 10px;
+    font-family: Helvetica, Arial, sans-serif
+}
+
+body > div {
+    margin-top: 50px;
+}
+
+ul, li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+ul {
+	display: block;
+	font-size: 0;
+}
+
+li {
+	display: inline-block;
+	width: 80px;
+	height: 50px;  /* @contentHeight */
+	font-size: 14px;
+	text-align: center;
+	line-height: 50px;
+}
+
+.typeA {
+	background-color: #DDD;
+}
+
+.typeB {
+	background-color: #CCC;
+}
+
+.typeC {
+	background-color: #BBB;
+}
+
+
+
+.slidingContent {
+    position: relative;
+    height: 50px;   /* @sliderHeight = @contentHeight */
+    overflow: hidden;
+    background-color: #999;
+}
+
+.slidingContent-inner {
+    position: absolute;
+    left: 50px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    height: 80px;  /* @sliderHeight + 30 */
+}
+
+.slidingContent > a {
+    position: absolute;
+    top: 0;
+    width: 50px;
+    height: 50px;   /* @sliderHeight */
+    z-index: 5;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;  /* @sliderHeight */
+    outline: none;
+    color: #CCC;
+    text-decoration: none;
+}
+
+.slidingContent > .left {
+    left: 0;
+}
+
+.slidingContent > .right {
+    right: 0;
+}
+
+.slidingContent > a:hover {
+    color: #333;
+}
