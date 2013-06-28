@@ -1,0 +1,19 @@
+#!/bin/sh
+
+#
+# git post-commit hook for automatically updating the github pages branch.
+# Copy this file into .git/hooks/post-commit
+#
+# https://github.com/olihel/sliding-content
+#
+# Copyright (c) 2013 Oliver Hellebusch
+# Released under MIT license (https://raw.github.com/olihel/sliding-content/master/LICENSE)
+#
+
+echo "### Updating gh-pages branch..."
+git checkout gh-pages
+git rm -rf .
+git read-tree master:src
+git commit -m "automatic update"
+git push origin gh-pages
+git checkout master
