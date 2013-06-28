@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--
+    SlidingContent
+    https://github.com/olihel/sliding-content.git
+
+    Copyright (c) 2013 Oliver Hellebusch
+    Released under MIT license (https://raw.github.com/olihel/sliding-content/master/LICENSE)
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SlidingContent</title>
+  <meta name="language" content="en" />
+  <link rel="stylesheet" media="screen" href="css/styles.css" />
+</head>
+
+<body>
+  <h1>SlidingContent demo</h1>
+
+  <div>
+    <p>Untouched markup:</p>
+    <ul style="width: 960px;"> <!-- 12 x 80px = 960px-->
+      <li class="typeA">A</li>
+      <li class="typeB">B</li>
+      <li class="typeC">C</li>
+      <li class="typeA">D</li>
+      <li class="typeB">E</li>
+      <li class="typeC">F</li>
+      <li class="typeA">G</li>
+      <li class="typeB">H</li>
+      <li class="typeC">I</li>
+      <li class="typeA">J</li>
+      <li class="typeB">K</li>
+      <li class="typeC">L</li>
+    </ul>
+  </div>
+
+  <div>
+    <p>Same markup handled by SlidingContent script:</p>
+    <ul class="sliding" style="width: 960px;"> <!-- 12 x 80px = 960px-->
+      <li class="typeA">A</li>
+      <li class="typeB">B</li>
+      <li class="typeC">C</li>
+      <li class="typeA">D</li>
+      <li class="typeB">E</li>
+      <li class="typeC">F</li>
+      <li class="typeA">G</li>
+      <li class="typeB">H</li>
+      <li class="typeC">I</li>
+      <li class="typeA">J</li>
+      <li class="typeB">K</li>
+      <li class="typeC">L</li>
+    </ul>
+  </div>
+
+  <script src="js/ext/jquery.min.js"></script>
+  <script src="js/ext/modernizr.min.js"></script>
+  <script src="js/ext/requestAnimationPolyfill.js"></script>
+  <script src="js/SlidingContent.js"></script>
+
+  <script>
+    (function () {
+      var slidingContent = new SlidingContent({
+        width: 500,
+        $content: $('.sliding'),
+        contentWidth: 960,
+        sliderInnerWidth: 400,  // sliderWidth - 2 * buttonWidth
+        contentMarginLeft: 0,
+        contentMarginRight: 0
+      });
+    }());
+  </script>
+</body>
+</html>

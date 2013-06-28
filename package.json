@@ -1,0 +1,25 @@
+{
+  "name": "sliding-content",
+  "description": "Basic module for sliding content inside a HTML element",
+  "version": "1.0.0",
+  "homepage": "http://olihel.github.io/sliding-content",
+  "author": "Oliver Hellebusch <mail@olihel.com>",
+  "main": "src/js/SlidingContent.coffee",
+  "readmeFilename": "README.md",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://raw.github.com/olihel/sliding-content/master/LICENSE"
+    }
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "coffee-script": "~1.6.3",
+    "grunt": "~0.4.1",
+    "grunt-contrib-coffee": "~0.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/olihel/sliding-content.git"
+  }
+}
