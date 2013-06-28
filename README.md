@@ -60,6 +60,8 @@ slidingContent = null;
 
 <br>
 
+- - -
+
 <sub>**Credits**</sub>  
 <sub>Thanks to [SinnerSchrader](http://www.sinnerschrader.com/) for support.</sub>
 
