@@ -2,6 +2,8 @@
 
 Basic module for sliding content inside a HTML element.  
 
+See [example page](http://olihel.github.io/sliding-content/)  
+
 
 ### Usage
 
