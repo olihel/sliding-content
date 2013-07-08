@@ -57,10 +57,7 @@ slidingContent.destroy();
 slidingContent = null;
 ```
 
-
-<br>
-
-- - -
+[![githalytics.com alpha](https://cruel-carlota.gopagoda.com/3c990ad259931bc047c9c72caf710fd3 "githalytics.com")](http://githalytics.com/olihel/sliding-content)
 
 <sub>**Credits**</sub>  
 <sub>Thanks to [SinnerSchrader](http://www.sinnerschrader.com/) for support.</sub>
